@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JS y HTML</title>
+    <link rel="stylesheet" href="./styles.css"> <!-- Opcional, si tienes CSS -->
+</head>
+<body>
+    <div class="container">
+        <!-- Ejercicio 1: Calculadora de IMC -->
+        <div id="ejercicio1">
+            <h2>1. Calculadora de IMC</h2>
+            <input type="number" id="peso" placeholder="Peso en kg" min="0" step="any">
+            <input type="number" id="altura" placeholder="Altura en metros" min="0" step="any">
+            <button id="calcularBtn">Calcular</button>
+            <div id="resultado" class="result"></div>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Ejercicio 2: Conversor de Divisas -->
+        <div class="converter">
+            <label for="usd">Dólares (USD):</label>
+            <input type="number" id="usd" value="1" oninput="convertToMXN()">
+        
+            <label for="mxn">Pesos Mexicanos (MXN):</label>
+            <input type="number" id="mxn" value="20" oninput="convertToUSD()">
+        </div>
+    </div>
+    <div class="container">
+        <!-- Ejercicio 3: Aplicación de Notas -->
+        <div id="app">
+            <div id="form">
+                <input type="text" id="titulo" placeholder="Título de la nota">
+                <textarea id="texto" placeholder="Texto de la nota"></textarea>
+                <button id="guardar">Guardar Nota</button>
+                <button id="borrarCampos">Borrar Campos</button>
+            </div>
+
+            <div id="filtros">
+                <input type="text" id="busqueda" placeholder="Buscar notas...">
+                <label>
+                    <input type="checkbox" id="filtroRealizadas"> Mostrar realizadas
+                </label>
+            </div>
+
+            <div id="contenedorNotas"></div> 
+        </div>
+    </div>
+    <script src="./ejercicios.js"></script> <!-- Enlaza el archivo JS -->
+</body>
+</html>

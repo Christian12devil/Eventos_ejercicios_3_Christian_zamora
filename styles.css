@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 50%;
+    margin-top: 2%;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.converter {
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  input {
+    padding: 10px;
+    font-size: 16px;
+  }
+/* Estilos para los títulos */
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+#app {
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#form, #filtros {
+    margin-bottom: 20px;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#contenedorNotas .nota {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    position: relative;
+}
+
+#contenedorNotas .nota h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+#contenedorNotas .nota p {
+    font-size: 14px;
+}
+
+#contenedorNotas .nota .acciones {
+    margin-top: 10px;
+}
+
+#contenedorNotas .nota .acciones button {
+    background-color: #dc3545;
+    margin-left: 5px;
+}
+
+#contenedorNotas .nota .acciones input[type="checkbox"] {
+    margin-right: 10px;
+}
+/* Estilos específicos para los resultados */
+.result {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e9f7df;
+    border-left: 5px solid #2ecc71;
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+/* Media query para hacer el diseño responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
